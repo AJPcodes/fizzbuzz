@@ -5,7 +5,7 @@ For numbers which are multiples of both three and five print “FizzBuzz”
 It would be more interesting if the numbers were -50 to +50.
 */
 
-const fizzbuzz = (start, end) => {
+const fizzbuzz = (start = 1, end = 100) => {
 
   if (Number.isInteger(start) && Number.isInteger(end) && (start < end)) {
     for (let i = start; i <= end; i++) {
@@ -19,6 +19,7 @@ const fizzbuzz = (start, end) => {
   }
 }
 
+fizzbuzz()
 // fizzbuzz(1, 10)
 // fizzbuzz("Bad Input")
 // fizzbuzz(10, 5)
